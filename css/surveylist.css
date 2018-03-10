@@ -1,0 +1,68 @@
+.nopadding{ padding-right:0; padding-left:0;}
+.nopadding-right{ padding-right:0; }
+.nopadding-left{ padding-left:0; }
+/* Survey List Section */
+.survey-list-section .panel-body:not(.two-col) { padding:0px }
+.survey-list-section .panel-body .radio,.survey-list-section .panel-body .checkbox {margin-top: 0px;margin-bottom: 0px;}
+.survey-list-section .panel-body .list-group {margin-bottom: 0;}
+.survey-list-section .margin-bottom-none { margin-bottom: 0; }
+.survey-list-section .panel-body .radio label,.survey-list-section .panel-body .checkbox label { padding: 10px 0 10px 20px;display:block;font-weight: 700; }
+.survey-list-section .panel-body .checkbox label:hover{
+    /* background: #B5B5B5; */
+}
+.survey-list-section .panel-body .checkbox label.checked_div{
+    /* background: #B5B5B5; */
+        background-color: #1abc9c;
+    	color: #ffffff;
+        box-shadow: 0 0 0 1px #1abc9c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 6px 0 0 #1abc9c, 0 2px 0 1px #1abc9c, 0 2px 0px 1px #1abc9c;
+    -webkit-transition: all 0.3s; 
+       -moz-transition: all 0.3s; 
+       transition: all 0.3s; 
+      /*     -webkit-transform: rotateX( 360deg );
+    -moz-transform: rotateX( 360deg );
+    -o-transform: rotateX( 360deg );
+    transform: rotateX( 360deg ); */
+} 
+    
+.survey-list-section .panel-body .checkbox label::after {
+   /* width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #B5B5B5;
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0.5; 
+    background-color: #1abc9c; */
+}
+.survey-list-section .panel-body .checkbox label:hover::after {
+    width: 100%;
+}
+
+.survey-list-section .survey-result-section{ display:none;}
+.survey-list-section .panel-title{ display:inline-block; }
+.survey-list-section .panel-primary > .panel-heading{  background: none;border: none;color: #8f8f8f; }
+.survey-list-section .panel-user { color:#F44D54;font-size: 14px; }
+.survey-list-section .panel-timer { font-size: 11px;color: #c9c9c9;}
+.survey-list-section .checkbox-div{
+        margin-bottom: 12px;
+        color: #636161;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+       background-color: #e9e4e4;      
+    	box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 6px 0 0 #adadad, 0 2px 0 1px #e9e4e4, 0 2px 0px 1px #e9e4e4;
+    }
+.survey-list-section .panel{ border-radius:0;color: #636161;}
+.survey-list-section .panel-bottom{ text-align: left;font-size: 18px;top: 4px; }
+.survey-list-section .panel-heading{ padding-bottom:0; }
+.survey-list-section .panel-body{ padding-top:5px;}
+.survey-list-section .vote_count{ font-size: 11px;color: #9496a2; }
+.survey-option-section input[type="radio"]{ display: none; }
+.vote_button_div{ text-align:right; }
+.social-button{ font-size: 11px; }
+.result-emojis{ margin-top:5px; }
+

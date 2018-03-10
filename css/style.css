@@ -1,0 +1,359 @@
+/*-----------------------------------------------------------------------------
+
+KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	07/27/11
+author:		themepunch
+email:     	support@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+
+.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
+.fa {   cursor:pointer; }
+.fa-facebook, .fa-facebook-square {
+    color: #3b5998
+}
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+.fa-google-plus, .fa-google-plus-square {
+    color: #dd4b39
+}
+.fa-youtube, .fa-youtube-play, .fa-youtube-square {
+    color: #bb0000
+}
+.fa-tumblr, .fa-tumblr-square {
+    color: #32506d
+}
+.fa-vine {
+    color: #00bf8f
+}
+.fa-flickr {
+    color: #ff0084
+}
+.fa-vimeo-square {
+    color: #aad450
+}
+.fa-pinterest, .fa-pinterest-square {
+    color: #cb2027
+}
+.fa-linkedin, .fa-linkedin-square {
+    color: #007bb6
+}
+.fa-instagram {
+    color: #517fa4;
+}
+.fa-spotify {
+    color: #1ED760;
+}
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.facebook-btn{
+	background-color: #3b5998;
+	padding: 2px 7px;
+}
+.whatsapp-btn{
+	background-color: #00E676;
+	padding: 2px 7px;
+}
+.facebook-btn .fa,.whatsapp-btn .fa{
+   color:#ffffff;
+}
+
+
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+
+
+/* Tags Cloud */
+.tagscloud ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tagscloud ul li {
+	position: relative;
+	display: inline-block;
+	margin: 0 .75em .5em 0;
+	padding: 0;
+}
+.tagscloud ul li a {
+	border: 1px solid #3498db;
+	color: #3498db;
+	position: relative;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 1em;
+	border-radius: 3px;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/* overflow: hidden; */
+
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagscloud ul li span {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	z-index: 2;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	background-color: #3498db;
+	border: 1px solid #3498db;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: .2s;
+	transition: .2s;
+	-webkit-transform: scale(.4);
+	transform: scale(.4);
+}
+.tagscloud ul li span::after {
+	position: absolute;
+	top: 50%;
+	left: -8px;
+	content: '';
+	width: 0;
+	height: 0;
+	margin-top: -7px;
+	border-color: transparent #3498db transparent transparent;
+	border-style: solid;
+	border-width: 7px 14px 7px 0;
+}
+.tagscloud ul li a:hover {
+	color: #333;
+	background: #fff;
+	border: 1px solid #aaa;
+}
+.tagscloud ul li:hover span {
+	right: -26px;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+  /* End Tags Cloud Sidebar */
+
+
+  /* Search Result */
+  .search_result_div{
+	    color: #ffffff;
+		font-size: 19px;
+		margin: 5px 0;
+  }
+  
+  /* category section */
+ .error-template { text-align: center; color: #ffffff;}
+ 
+ /* tab section */
+#accountTab a:hover,#accountTab a:focus{
+    outline: none;
+    text-decoration: none;
+}
+#accountTab{ text-align: center; background: #ffffff; }
+#accountTab .nav-tabs{
+    display: inline-block;
+    border-bottom: none;
+    position: relative;
+}
+#accountTab.nav-tabs li{
+    margin-bottom: 0;
+}
+#accountTab .nav-tabs li a{
+    display: block;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+    margin-right: 0;
+    text-align: center;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+#accountTab .nav-tabs li a i{
+    display: block;
+    font-size: 40px;
+    color: #00a6ff;
+    margin-bottom: 15px;
+}
+#accountTab .nav-tabs li.active a,
+#accountTab .nav-tabs li a:hover{
+    border: none;
+    background: transparent;
+}
+#accountTab .nav-tabs li a:before,
+#accountTab .nav-tabs li a:after{
+    content: "";
+    width: 0;
+    border-top: 3px solid #00a6ff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+#accountTab .nav-tabs li a:after{
+    left: auto;
+    right: 0;
+}
+#accountTab .nav-tabs li.active a:before,
+#accountTab .nav-tabs li a:hover:before,
+#accountTab .nav-tabs li.active a:after,
+#accountTab .nav-tabs li a:hover:after{
+    width: 51%;
+}
+#accountTab .tab-content{
+    padding: 20px;
+    margin-top: -5px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #d7d6d6;
+    font-size: 15px;
+    color: #757575;
+    line-height: 30px;
+}
+#accountTab .tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+@media only screen and (max-width: 479px){
+    #accountTab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    #accountTab .nav-tabs li a,
+    #accountTab .nav-tabs li a:hover{ border-bottom: 1px solid #dfdfdf; }
+    #accountTab .tab-content{ border-top: none; }
+}
+ 
+ 
+ /* Form section */
+
+.main_create .form-control {
+    height: auto!important;
+padding: 8px 12px !important;
+}
+.main_create .input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+.main_create #create_survey_submit {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+
+#create_survey_form .addOptionButtton{
+	margin-top:10px;
+}
+
+#create_survey_form .extra_option{
+	float: left;
+	width: 100%;
+}
+
+.main_create{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+    padding: 10px 40px;
+	background-color: #1abc9c;
+	    color: #FFF;
+    text-shadow: none;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+.main_create span.input-group-addon i {
+    color: #1abc9c;
+    font-size: 17px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{
+	color: #ffffff;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice{
+	background-color: #1abc9c;
+}
+.select2-container{
+	width:100% !important;
+}
+.mob-category{
+		display:none;
+}
+#my_surveys .error-template{
+	 color: #444;
+}
+    .mob-header-search{	
+		display:none;
+		margin-top:0 !important;
+	}
+    #loginForm{
+      width:96%;
+      margin:0 auto;
+    }
+    #loginForm .modal-content{
+       top:35%;
+    }
+
+/* Facebook */
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+ .btn-facebook .fa-facebook{ color:#ffffff; }
+ 
